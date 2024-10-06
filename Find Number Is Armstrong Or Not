@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main()
+{
+int num,reminder,result;
+printf(enter three digit");
+scanf("%d",num);
+while(num!=0)
+{
+result += reminder*reminder*reminder;
+num/= 10;
+}
+if(result==num)
+printf("%d is amstrong number",num);
+else
+printf("%d is not amstrong number",num);
+return 0;
+}
