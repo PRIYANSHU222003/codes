@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main()
+{
+    int num,i,sum;
+    printf("enter integer");
+    scanf("%d",&num);
+    for(i=1;i<=num;++i)
+    {
+        sum+=i;
+    }
+    printf("the sum %d is %d",num,sum);
+    return 0;
+}
