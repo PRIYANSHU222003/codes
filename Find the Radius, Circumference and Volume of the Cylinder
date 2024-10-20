@@ -1,0 +1,20 @@
+#include<stdio.h>
+int main()
+{
+int r,c,v,h;
+float pi=3.14;
+printf("enter radius ");
+scanf("%d",&r);
+printf("enter height");
+scanf("%d",&h);
+switch(r)
+{
+case 1:
+c=pi*r*h;
+printf("circumference =%d",c);
+case 2:
+v=pi*r*r*h;
+printf("volume=%d",v);
+}
+return 0;
+}
