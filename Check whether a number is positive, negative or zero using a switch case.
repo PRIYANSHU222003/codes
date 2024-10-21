@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main()
+{
+int n1;
+printf("enter integer");
+scanf("%d",&n1);
+switch(n1>0)
+{
+case 1:
+printf("positive integer");
+case 0:
+{
+switch(n1<0)
+{
+case 1:
+printf("negative integer");
+case 0:
+printf("zero integer");
+}
+}
+}
+return 0;
+}
