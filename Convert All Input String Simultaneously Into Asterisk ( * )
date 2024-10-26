@@ -1,0 +1,21 @@
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+char ch[]="*****";
+char c='A';
+int i=0,j;
+printf("enter your name\n\n");
+while(c)
+{
+c=getch();
+printf("%c/a",ch[i]);
+i++;
+if(i==10)
+{
+prinf(" ");
+i=0;
+}
+}
+return 0;
+}
