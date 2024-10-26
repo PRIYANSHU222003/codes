@@ -1,0 +1,21 @@
+#include<stdio.h>
+#iclude<string.h>
+int main()
+{
+char str[10]="priyanshu";
+int i,len,flag=0;
+len=strlen(str);
+for(i=0;i<len;i++)
+{
+if(str[i]!=str[len-i-1])
+{
+flag=1;
+break;
+}
+}
+if(flag)
+printf("%s is not palidrome",str);
+else
+printf("%s is palidrome",str);
+return 0;
+}
