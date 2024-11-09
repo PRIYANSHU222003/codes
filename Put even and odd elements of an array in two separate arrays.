@@ -1,0 +1,40 @@
+#include<studio.h>
+#include<conio.h>
+int main()
+{
+int arr1[100],arr2[10],arr3[10],i,j=0,k=0;
+int size;
+printf("enter size of array");
+scanf("%d",&size);
+printf("enter %d element of array",size);
+for(i=0,i<size,i++)
+{
+printf("element-%d",i);
+scanf("%d",&arr1[i]);
+}
+for(i=0,i<size,i++)
+{
+if(arr1[i]%2==0)
+{
+arr2[j]=arr1[i];
+j++;
+}
+else
+{
+arr3[k]=arr1[i];
+k++;
+}
+}
+printf("even number are");
+for(i=0,i<j,i++)
+{
+printf("%d",arr2[i]);
+}
+printf("odd number are");
+for(i=0,i<k,i++)
+{
+printf("%d",arr3[i]);
+}
+printf("/n");
+return 0;
+}
