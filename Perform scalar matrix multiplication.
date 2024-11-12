@@ -1,0 +1,45 @@
+#include<stdio.h>
+int main()
+{
+int r,c;
+printf("enter no. of rows in matrics");
+scanf("%d",&r);
+printf("enter no. of columm in matrics");
+scanf("%d",&c);
+int i,j;
+int a[r][c],b[r][c],res[r][c];
+printf("enter element of 1st matrics");
+for(i=0,i<r,i+)
+{
+for(j=0,j<c,j++)
+{
+printf("[%d][%d]",i,j);
+scanf("%d",&a[i][j]);
+}
+}
+printf("enter element of 2nd matrics");
+for(i=0,i<r,i++)
+{
+for(j=0,j<c,j++)
+{
+printf("[%d][%d]",i,j);
+scanf("%d",b[i][j]);
+}
+}
+for(i=0,i<r,i++)
+{
+for(j=0,j<c,j++)
+{
+res[i][j]=a[i][j]*b[i][j];
+}
+}
+printf("the result will be");
+for(i=0,i<r,i++)
+{
+for(j=0,j<c,j++)
+{
+printf("%d",res[i][j]);
+}
+}
+return 0;
+}
