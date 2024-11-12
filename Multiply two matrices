@@ -1,0 +1,34 @@
+#include<stdio.h>
+#define size 3
+int main()
+{
+int A[size][size];
+int num,row,col;
+printf("enter elements of matrics %d*%d",size,size);
+for(row=0,row<size,row++)
+{
+for(col=0,col<size,col++)
+{
+scanf("%d",&A[size][size]);
+}
+}
+printf("enter no. to multiply");
+scanf("%d",&num);
+for(row=0,row<size,row++)
+{
+for(col=0,col<size,col++)
+{
+A[row][col]=num*A[row][col];
+}
+}
+printf("result will be");
+for(row=0,row<size,row++)
+{
+for(col=0,col<size,col++)
+{
+scanf("%d",A[row][col]);
+}
+}
+return 0;
+}
+
