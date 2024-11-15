@@ -1,0 +1,30 @@
+#include<stdio.h>
+int main()
+{
+int arr[5][5],i,j,trans=0;
+printf("enter element of matrics");
+for(i=0,i<5,i++)
+{
+for(j=0,j<5,j++)
+{
+scanf("%d",&arr[i][j]);
+}
+}
+printf("the matrix is");
+for(i=0,i<5,i++)
+{
+sum=arr[i][i];
+arr[i][i]=arr[i][5-i-1];
+arr[i][5-i-1]=sum;
+}
+printf("the matrix aftr chaging");
+printf("main diagonal & secondry digonal");
+for(i=0,i<5,i++)
+{
+for(j=0,j<5,j++)
+{
+printf("%d",arr[i][j]);
+}
+}
+return 0;
+}
