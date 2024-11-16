@@ -1,0 +1,42 @@
+#include<stdio.h>
+int  main()
+{
+int a[10][10],b[10][10];
+int i,j,r,c;
+printf("enter row and columm of matrix");
+scanf("%d%d",&r,&c);
+printf("enter element of matrix");
+for(i=0;i<r;i++)
+{
+for(j=0;j<c;j++)
+{
+scanf("%d",&a[i][j]);
+}
+}
+for(i=0;i<r;i++)
+{
+for(j=0;j<c;j++)
+{
+b[i][j]=a[i][j]
+}
+}
+int cout=0;
+for(i=0;i<r;i++)
+{
+for(j=0;j<c;j++)
+{
+if(a[i][j]!=b[i][j])
+{
+cout++;
+break;
+}
+}
+}
+if(cout--0)
+{
+printf("the matrix is symmetric");
+}
+else
+printf("the matrix is not symmetric");
+return 0;
+}
