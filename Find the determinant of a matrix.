@@ -1,0 +1,26 @@
+#include<stdio.h>
+int main()
+{
+int arr[3][3];
+int i,j,determinant;
+printf("enter element of matrix 5*5);
+for(i=0;i<3;i++)
+{
+for(j=0;j<3;j++)
+{
+scanf("%d",&arr[i][j]);
+}
+}
+printf("the matrix ");
+for(i=0;i<3;i++)
+{
+for(j=0;j<3;j++)
+{
+printf("%d\t",arr[i][j]);
+determinant = a[0][0] * ((a[1][1]*a[2][2]) - (a[2][1]*a[1][2])) -a[0][1] * (a[1][0]
+   * a[2][2] - a[2][0] * a[1][2]) + a[0][2] * (a[1][0] * a[2][1] - a[2][0] * a[1][1]);
+printf("determinant will be=%d",determinant);
+}
+}
+return 0;
+}
