@@ -1,0 +1,28 @@
+#include<stdio.h>
+int mai()
+{
+int a[10][10];
+int i,j,r,c;
+printf("enter row and columm of matrix");
+scanf("%d%d",&r,%c);
+printf("enter element of matrix");
+for(i=0;i<r;i++)
+{
+for(j=0;j<c;j++)
+{
+scanf("%d",&a[i][j]);
+}
+}
+int counter=0;
+if(a[i][j]==0)
+{
+counter++;
+}
+if(counter >((r*c)/2))
+{
+printf("it is spare  matrix");
+}
+else
+printf("it is not spare matrix");
+return 0;
+}
