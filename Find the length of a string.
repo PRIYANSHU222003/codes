@@ -1,0 +1,9 @@
+#include<studio.h>
+#include<string.h>
+int main()
+{
+char str[]="hiii";
+int length=strlen;
+printf("the length of string=%d",length);
+return 0;
+}
