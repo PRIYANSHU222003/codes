@@ -1,0 +1,17 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+char* copystring(char s[])
+{
+char* s2;
+s2=(char*)malloc(20);
+strcpy(s2,s);
+return(char*)s2;
+}
+int main()
+{
+char s1[20]="sun";
+s2=copystring(s1);
+printf("%s",s2);
+return 0;
+}
