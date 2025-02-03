@@ -1,0 +1,38 @@
+#include<studio.h>
+#include<stdlib.h>
+{
+void multiplymatrix(int m1[][c1],int m2[][c2])
+{
+int result[r1][c2];
+printf("result matrix");
+for(int i=0;i<r1;i++)
+{
+for(int j=0;j<c2;j++ )
+{
+result[i][j]=0;
+for(int k=0;k<r2;k++)
+{
+result[i][j]+=m1[i][k]*m2[k][j];
+}
+printf("%d",result[i][j]);
+}
+printf("/n");
+}
+}
+int main()
+{
+int m1[r1][c1]={{1,2},{4,5}};
+int m2[r2][c2]={{5,6},{8,9}};
+if(c1!=r2)
+{
+printf(""The number of columns in Matrix-1 must be "
+               "equal to the number of rows in "
+               "Matrix-2\n");
+printf("Please update MACROs value according to "
+               "your array dimension in "
+               "#define section\n");
+exit(exit failure);
+}
+multiplymatrix(m1,m2)
+return 0;
+}
